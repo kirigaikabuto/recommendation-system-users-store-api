@@ -6,13 +6,16 @@ import (
 	setdata_common "github.com/kirigaikabuto/setdata-common"
 )
 
+var (
+
+)
 func main() {
 	config := users_lib.PostgresConfig{
 		Host:     "localhost",
 		Port:     5432,
 		User:     "setdatauser",
 		Password: "123456789",
-		Database: "setdata",
+		Database: "recommendation_system",
 		Params:   "sslmode=disable",
 	}
 	store, err := users_lib.NewPostgresUsersStore(config)

@@ -9,6 +9,10 @@ github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+
 github.com/hpcloud/tail v1.0.0/go.mod h1:ab1qPbhIpdTxEkNHXyeSf5vhxWSCs/tWer42PpOxQnU=
 github.com/kirigaikabuto/recommendation-system-users-store v0.0.0-20211104093000-b47fccd82921 h1:vOuKju8dDefhEceZimUo8nV+YgRwfeO9g7bGccyykTI=
 github.com/kirigaikabuto/recommendation-system-users-store v0.0.0-20211104093000-b47fccd82921/go.mod h1:YN7xzRVKnr0TFhqmwzhRp5hOGqEhcjNGaVi9f3qKtNA=
+github.com/kirigaikabuto/recommendation-system-users-store v0.0.0-20211104124035-7d2a6268e9bd h1:AhCysBydfngnbg9j0+OOHmUgDLVQdqB4HUSdszdsJ0M=
+github.com/kirigaikabuto/recommendation-system-users-store v0.0.0-20211104124035-7d2a6268e9bd/go.mod h1:YN7xzRVKnr0TFhqmwzhRp5hOGqEhcjNGaVi9f3qKtNA=
+github.com/kirigaikabuto/recommendation-system-users-store v0.0.0-20211104124254-91b15b86b91f h1:OhuGxQ/BSw200DmXjCXslIeIoLQpet12EBOGT5JiJLw=
+github.com/kirigaikabuto/recommendation-system-users-store v0.0.0-20211104124254-91b15b86b91f/go.mod h1:YN7xzRVKnr0TFhqmwzhRp5hOGqEhcjNGaVi9f3qKtNA=
 github.com/kirigaikabuto/setdata-common v1.0.1-0.20211012131738-4d0bfa9dbade h1:576KcFR2h66iKb8k1232wWqiEk41wkLqfrLQgmmUqzU=
 github.com/kirigaikabuto/setdata-common v1.0.1-0.20211012131738-4d0bfa9dbade/go.mod h1:A5j+H7WGjHH0vqZ2oYNqrx8OpZfOd5Lp5PsxSqyXmOk=
 github.com/konsorten/go-windows-terminal-sequences v0.0.0-20180402223658-b729f2633dfe h1:CHRGQ8V7OlCYtwaKPJi3iA7J+YdNKdo8j7nG5IgDhjs=

@@ -7,16 +7,23 @@ import (
 )
 
 var (
-
+	postgresUser         = "setdatauser"
+	postgresPassword     = "123456789"
+	postgresDatabaseName = "recommendation_system"
+	postgresHost         = "localhost"
+	postgresPort         = 5432
+	postgresParams       = "sslmode=disable"
+	amqpUrl              = "amqp://localhost:5672"
 )
+
 func main() {
 	config := users_lib.PostgresConfig{
-		Host:     "localhost",
-		Port:     5432,
-		User:     "setdatauser",
-		Password: "123456789",
-		Database: "recommendation_system",
-		Params:   "sslmode=disable",
+		Host:     postgresHost,
+		Port:     postgresPort,
+		User:     postgresUser,
+		Password: postgresPassword,
+		Database: postgresDatabaseName,
+		Params:   postgresParams,
 	}
 	store, err := users_lib.NewPostgresUsersStore(config)
 	if err != nil {
@@ -27,8 +34,7 @@ func main() {
 	commandHandler := setdata_common.NewCommandHandler(service)
 	usersAmqpEndpoints := users_lib.NewUserAmqpEndpoints(commandHandler)
 	rabbitConfig := amqp.Config{
-		Host:     "localhost",
-		Port:     5672,
+		AMQPUrl:  amqpUrl,
 		LogLevel: 5,
 	}
 	serverConfig := amqp.ServerConfig{
